@@ -38,11 +38,11 @@
   box-sizing: border-box;
 }
 
-.card .profile-image {
+.card .foto {
   padding: 15% 10% 0;
 }
 
-.card .profile-image img {
+.card .foto img {
   max-width: 100%;
   vertical-align: top;
   position: relative;
