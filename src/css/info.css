@@ -2,86 +2,30 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 
-[class*="entypo-"]:before {
+[class="entypo-"]:before {
   font-family: 'Merriweather', sans-serif;
 }
 
 .info {
+    background: white;
+    height: 1000px;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 1000px;
-    background: white;
 }
 
 ul {
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-img,
-object,
-embed {
-  max-width: 100%;
-  height: auto;
-}
-
-object,
-embed {
-  height: 100%;
-}
-
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-.hide {
-  display: none;
-}
-
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.box {
-  background: #ccc;
-  height: 45px;
-}
-
-
-ul.main {
   list-style: none;
   max-width: 75%;
   margin: 20px auto;
 }
 
-h3 {
-  padding: 0;
-  margin: 0;
-}
-
 /*  style da Data */
 
 .data {
-  width: 17%;
-  padding: 15% 1% 0 0;
   float: left;
+  padding: 15% 1% 0 0;
+  width: 17%;
 }
 
 .data h3 {
@@ -90,15 +34,16 @@ h3 {
 }
 
 .data p {
+  margin-left: 15px;
   font-size: .8em;
 }
 
 .evento {
-  float: left;
-  width: 80%;
   border-left: 2px solid #ccc;
+  float: left;
   margin-top: 10%;
   padding-top: 3%;
+  width: 80%;
 }
 
 .evento-detalhes {
@@ -106,9 +51,9 @@ h3 {
 }
 
 .evento-detalhes li {
-  padding: 10px;
   border-bottom: 1px solid #ccc;
   line-height: 22px;
+  padding: 10px;
   transition: ease .4s all;
 }
 
@@ -122,32 +67,36 @@ h3 {
 }
 
 .evento-detalhes li a {
-  text-decoration: none;
   color: #444;
-  width: 100%;
-  height: 100%;
   display: block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
 }
 
 .profissao-palestrante {
-  font-size: .8em;
   color: gray;
+  font-size: .8em;
   margin-left: 70px;
 }
 
-/* medias */
+/* media */
 
 @media all and (max-width: 641px) {
   .data {
-    width: 100%;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .data h3 {
+    margin-left: 100px;
   }
 
   .evento {
     border: none;
-    width: 100%;
     margin-top: 0;
+    width: 100%;
   }
 
   .evento-detalhes {

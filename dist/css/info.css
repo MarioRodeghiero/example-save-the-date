@@ -2,159 +2,108 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
 
-[class*="entypo-"]:before {
+[class="entypo-"]:before {
   font-family: 'Merriweather', sans-serif;
 }
 
-
 .info {
+    background: white;
+    height: 1000px;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 1000px;
-    background: white;
 }
 
 ul {
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-img,
-object,
-embed {
-  max-width: 100%;
-  height: auto;
-}
-
-object,
-embed {
-  height: 100%;
-}
-
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-.hide {
-  display: none;
-}
-
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.box {
-  background: #ccc;
-  height: 45px;
-}
-
-
-ul.main {
   list-style: none;
   max-width: 75%;
   margin: 20px auto;
 }
 
-h3 {
-  padding: 0;
-  margin: 0;
-}
+/*  style da Data */
 
-/*  style Date */
-
-.date {
-  width: 17%;
-  padding: 15% 1% 0 0;
+.data {
   float: left;
+  padding: 15% 1% 0 0;
+  width: 17%;
 }
 
-.date h3 {
+.data h3 {
+  font-family: 'Merriweather', sans-serif;
   font-size: 1.5em;
 }
 
-.date p {
+.data p {
+  margin-left: 15px;
   font-size: .8em;
 }
 
-.events {
-  float: left;
-  width: 80%;
+.evento {
   border-left: 2px solid #ccc;
+  float: left;
   margin-top: 10%;
   padding-top: 3%;
+  width: 80%;
 }
 
-.events-detail {
+.evento-detalhes {
   max-width: 550px;
 }
 
-.events-detail li {
-  padding: 10px;
+.evento-detalhes li {
   border-bottom: 1px solid #ccc;
   line-height: 22px;
+  padding: 10px;
   transition: ease .4s all;
 }
 
-.events-detail li:hover {
+.evento-detalhes li:hover {
   background: #F5F5F5;
   border-radius: 10px;
 }
 
-.event-time {
+.evento-hora {
   font-weight: 900;
 }
 
-.events-detail li a {
-  text-decoration: none;
+.evento-detalhes li a {
   color: #444;
-  width: 100%;
-  height: 100%;
   display: block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
 }
 
-.event-location {
-  font-size: .8em;
+.profissao-palestrante {
   color: gray;
+  font-size: .8em;
   margin-left: 70px;
 }
 
-/* medias */
+/* media */
 
 @media all and (max-width: 641px) {
-  .date {
-    width: 100%;
+  .data {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
-  }
-
-  .events {
-    border: none;
     width: 100%;
-    margin-top: 0;
   }
 
-  .events-detail {
+  .data h3 {
+    margin-left: 100px;
+  }
+
+  .evento {
+    border: none;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .evento-detalhes {
     padding: 0;
   }
 
-  li.date p {
+  li.data p {
     margin: 0;
   }
 }
